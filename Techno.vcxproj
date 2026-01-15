@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ad49688b-1865-4a6e-bfda-ebcf59e8186e}</ProjectGuid>
+    <RootNamespace>Techno</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)includes;$(ProjectDir)libs;$(ProjectDir)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(ProjectDir)libs\leechcore.lib;$(ProjectDir)libs\vmm.lib;$(ProjectDir)libs\lua54.lib</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)includes;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(ProjectDir)libs\leechcore.lib;$(ProjectDir)libs\vmm.lib;$(ProjectDir)libs\lua54.lib</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Util\Globals.cpp" />
+    <ClCompile Include="Handlers\DrawingHandler.cpp" />
+    <ClCompile Include="Handlers\ImguiHandler.cpp" />
+    <ClCompile Include="Handlers\KeybindHandler.cpp" />
+    <ClCompile Include="Handlers\LuaHandler.cpp" />
+    <ClCompile Include="includes\imgui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_impl_dx11.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_impl_win32.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_tables.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Util\Instance.cpp" />
+    <ClCompile Include="includes\Memory\InputManager.cpp" />
+    <ClCompile Include="includes\Memory\Memory.cpp" />
+    <ClCompile Include="includes\Memory\Registry.cpp" />
+    <ClCompile Include="includes\Memory\Shellcode.cpp" />
+    <ClCompile Include="Util\Offsets.h">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/Zc:preprocessor %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Techno.cpp" />
+    <ClCompile Include="Util\Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\skStr.h" />
+    <ClInclude Include="Util\Globals.h" />
+    <ClInclude Include="Handlers\DrawingHandler.h" />
+    <ClInclude Include="Handlers\ImguiHandler.h" />
+    <ClInclude Include="Handlers\KeybindHandler.h" />
+    <ClInclude Include="Handlers\LuaHandler.h" />
+    <ClInclude Include="includes\imgui\imconfig.h" />
+    <ClInclude Include="includes\imgui\imgui.h" />
+    <ClInclude Include="includes\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="includes\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="includes\imgui\imgui_internal.h" />
+    <ClInclude Include="includes\imgui\imstb_rectpack.h" />
+    <ClInclude Include="includes\imgui\imstb_textedit.h" />
+    <ClInclude Include="includes\imgui\imstb_truetype.h" />
+    <ClInclude Include="includes\lua\lapi.h" />
+    <ClInclude Include="includes\lua\lauxlib.h" />
+    <ClInclude Include="includes\lua\lcode.h" />
+    <ClInclude Include="includes\lua\lctype.h" />
+    <ClInclude Include="includes\lua\ldebug.h" />
+    <ClInclude Include="includes\lua\ldo.h" />
+    <ClInclude Include="includes\lua\lfunc.h" />
+    <ClInclude Include="includes\lua\lgc.h" />
+    <ClInclude Include="includes\lua\ljumptab.h" />
+    <ClInclude Include="includes\lua\llex.h" />
+    <ClInclude Include="includes\lua\llimits.h" />
+    <ClInclude Include="includes\lua\lmem.h" />
+    <ClInclude Include="includes\lua\lobject.h" />
+    <ClInclude Include="includes\lua\lopcodes.h" />
+    <ClInclude Include="includes\lua\lopnames.h" />
+    <ClInclude Include="includes\lua\lparser.h" />
+    <ClInclude Include="includes\lua\lprefix.h" />
+    <ClInclude Include="includes\lua\lstate.h" />
+    <ClInclude Include="includes\lua\lstring.h" />
+    <ClInclude Include="includes\lua\ltable.h" />
+    <ClInclude Include="includes\lua\ltm.h" />
+    <ClInclude Include="includes\lua\lua.h" />
+    <ClInclude Include="includes\lua\lua.hpp" />
+    <ClInclude Include="includes\lua\luaconf.h" />
+    <ClInclude Include="includes\lua\lualib.h" />
+    <ClInclude Include="includes\lua\lundump.h" />
+    <ClInclude Include="includes\lua\lvm.h" />
+    <ClInclude Include="includes\lua\lzio.h" />
+    <ClInclude Include="includes\sol\abort.hpp" />
+    <ClInclude Include="includes\sol\assert.hpp" />
+    <ClInclude Include="includes\sol\as_args.hpp" />
+    <ClInclude Include="includes\sol\as_returns.hpp" />
+    <ClInclude Include="includes\sol\base_traits.hpp" />
+    <ClInclude Include="includes\sol\bind_traits.hpp" />
+    <ClInclude Include="includes\sol\bytecode.hpp" />
+    <ClInclude Include="includes\sol\call.hpp" />
+    <ClInclude Include="includes\sol\compatibility.hpp" />
+    <ClInclude Include="includes\sol\compatibility\compat-5.3.c.h" />
+    <ClInclude Include="includes\sol\compatibility\compat-5.3.h" />
+    <ClInclude Include="includes\sol\compatibility\compat-5.4.h" />
+    <ClInclude Include="includes\sol\compatibility\lua_version.hpp" />
+    <ClInclude Include="includes\sol\config.hpp" />
+    <ClInclude Include="includes\sol\coroutine.hpp" />
+    <ClInclude Include="includes\sol\debug.hpp" />
+    <ClInclude Include="includes\sol\demangle.hpp" />
+    <ClInclude Include="includes\sol\deprecate.hpp" />
+    <ClInclude Include="includes\sol\detail\build_version.hpp" />
+    <ClInclude Include="includes\sol\dump_handler.hpp" />
+    <ClInclude Include="includes\sol\ebco.hpp" />
+    <ClInclude Include="includes\sol\environment.hpp" />
+    <ClInclude Include="includes\sol\epilogue.hpp" />
+    <ClInclude Include="includes\sol\error.hpp" />
+    <ClInclude Include="includes\sol\error_handler.hpp" />
+    <ClInclude Include="includes\sol\forward.hpp" />
+    <ClInclude Include="includes\sol\forward_as.hpp" />
+    <ClInclude Include="includes\sol\forward_detail.hpp" />
+    <ClInclude Include="includes\sol\function.hpp" />
+    <ClInclude Include="includes\sol\function_result.hpp" />
+    <ClInclude Include="includes\sol\function_types.hpp" />
+    <ClInclude Include="includes\sol\function_types_core.hpp" />
+    <ClInclude Include="includes\sol\function_types_overloaded.hpp" />
+    <ClInclude Include="includes\sol\function_types_stateful.hpp" />
+    <ClInclude Include="includes\sol\function_types_stateless.hpp" />
+    <ClInclude Include="includes\sol\function_types_templated.hpp" />
+    <ClInclude Include="includes\sol\inheritance.hpp" />
+    <ClInclude Include="includes\sol\in_place.hpp" />
+    <ClInclude Include="includes\sol\load_result.hpp" />
+    <ClInclude Include="includes\sol\lua_table.hpp" />
+    <ClInclude Include="includes\sol\lua_value.hpp" />
+    <ClInclude Include="includes\sol\make_reference.hpp" />
+    <ClInclude Include="includes\sol\metatable.hpp" />
+    <ClInclude Include="includes\sol\object.hpp" />
+    <ClInclude Include="includes\sol\object_base.hpp" />
+    <ClInclude Include="includes\sol\optional.hpp" />
+    <ClInclude Include="includes\sol\optional_implementation.hpp" />
+    <ClInclude Include="includes\sol\overload.hpp" />
+    <ClInclude Include="includes\sol\packaged_coroutine.hpp" />
+    <ClInclude Include="includes\sol\pairs_iterator.hpp" />
+    <ClInclude Include="includes\sol\pointer_like.hpp" />
+    <ClInclude Include="includes\sol\policies.hpp" />
+    <ClInclude Include="includes\sol\prologue.hpp" />
+    <ClInclude Include="includes\sol\property.hpp" />
+    <ClInclude Include="includes\sol\protect.hpp" />
+    <ClInclude Include="includes\sol\protected_function.hpp" />
+    <ClInclude Include="includes\sol\protected_function_result.hpp" />
+    <ClInclude Include="includes\sol\protected_handler.hpp" />
+    <ClInclude Include="includes\sol\proxy_base.hpp" />
+    <ClInclude Include="includes\sol\raii.hpp" />
+    <ClInclude Include="includes\sol\reference.hpp" />
+    <ClInclude Include="includes\sol\resolve.hpp" />
+    <ClInclude Include="includes\sol\sol.hpp" />
+    <ClInclude Include="includes\sol\stack.hpp" />
+    <ClInclude Include="includes\sol\stack\detail\pairs.hpp" />
+    <ClInclude Include="includes\sol\stack_check.hpp" />
+    <ClInclude Include="includes\sol\stack_check_get.hpp" />
+    <ClInclude Include="includes\sol\stack_check_get_qualified.hpp" />
+    <ClInclude Include="includes\sol\stack_check_get_unqualified.hpp" />
+    <ClInclude Include="includes\sol\stack_check_qualified.hpp" />
+    <ClInclude Include="includes\sol\stack_check_unqualified.hpp" />
+    <ClInclude Include="includes\sol\stack_core.hpp" />
+    <ClInclude Include="includes\sol\stack_field.hpp" />
+    <ClInclude Include="includes\sol\stack_get.hpp" />
+    <ClInclude Include="includes\sol\stack_get_qualified.hpp" />
+    <ClInclude Include="includes\sol\stack_get_unqualified.hpp" />
+    <ClInclude Include="includes\sol\stack_guard.hpp" />
+    <ClInclude Include="includes\sol\stack_iterator.hpp" />
+    <ClInclude Include="includes\sol\stack_pop.hpp" />
+    <ClInclude Include="includes\sol\stack_probe.hpp" />
+    <ClInclude Include="includes\sol\stack_proxy.hpp" />
+    <ClInclude Include="includes\sol\stack_proxy_base.hpp" />
+    <ClInclude Include="includes\sol\stack_push.hpp" />
+    <ClInclude Include="includes\sol\stack_reference.hpp" />
+    <ClInclude Include="includes\sol\state.hpp" />
+    <ClInclude Include="includes\sol\state_handling.hpp" />
+    <ClInclude Include="includes\sol\state_view.hpp" />
+    <ClInclude Include="includes\sol\string_view.hpp" />
+    <ClInclude Include="includes\sol\table.hpp" />
+    <ClInclude Include="includes\sol\table_core.hpp" />
+    <ClInclude Include="includes\sol\table_iterator.hpp" />
+    <ClInclude Include="includes\sol\table_proxy.hpp" />
+    <ClInclude Include="includes\sol\thread.hpp" />
+    <ClInclude Include="includes\sol\tie.hpp" />
+    <ClInclude Include="includes\sol\traits.hpp" />
+    <ClInclude Include="includes\sol\trampoline.hpp" />
+    <ClInclude Include="includes\sol\tuple.hpp" />
+    <ClInclude Include="includes\sol\types.hpp" />
+    <ClInclude Include="includes\sol\unicode.hpp" />
+    <ClInclude Include="includes\sol\unique_usertype_traits.hpp" />
+    <ClInclude Include="includes\sol\unreachable.hpp" />
+    <ClInclude Include="includes\sol\unsafe_function.hpp" />
+    <ClInclude Include="includes\sol\unsafe_function_result.hpp" />
+    <ClInclude Include="includes\sol\userdata.hpp" />
+    <ClInclude Include="includes\sol\usertype.hpp" />
+    <ClInclude Include="includes\sol\usertype_container.hpp" />
+    <ClInclude Include="includes\sol\usertype_container_launch.hpp" />
+    <ClInclude Include="includes\sol\usertype_core.hpp" />
+    <ClInclude Include="includes\sol\usertype_proxy.hpp" />
+    <ClInclude Include="includes\sol\usertype_storage.hpp" />
+    <ClInclude Include="includes\sol\usertype_traits.hpp" />
+    <ClInclude Include="includes\sol\utility\is_integer.hpp" />
+    <ClInclude Include="includes\sol\utility\to_string.hpp" />
+    <ClInclude Include="includes\sol\variadic_args.hpp" />
+    <ClInclude Include="includes\sol\variadic_results.hpp" />
+    <ClInclude Include="includes\sol\version.hpp" />
+    <ClInclude Include="includes\sol\wrapper.hpp" />
+    <ClInclude Include="Util\Instance.h" />
+    <ClInclude Include="libs\leechcore.h" />
+    <ClInclude Include="libs\vmmdll.h" />
+    <ClInclude Include="includes\Memory\InputManager.h" />
+    <ClInclude Include="includes\Memory\Memory.h" />
+    <ClInclude Include="includes\Memory\Registry.h" />
+    <ClInclude Include="includes\Memory\Shellcode.h" />
+    <ClInclude Include="includes\nt\structs.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Util\Util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libs\lua54.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\techno.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
