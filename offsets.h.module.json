@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\Offsets.h.obj",
+            "outputs": [
+                "x64\\Debug\\",
+                "C:\\Users\\dma\\Downloads\\Techno_[unknowncheats.me]_\\Techno\\Techno\\x64\\Debug\\Offsets.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "Util\\Offsets.h",
+                    "source-path": "c:\\users\\dma\\downloads\\techno_[unknowncheats.me]_\\techno\\techno\\util\\offsets.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
